@@ -1,0 +1,40 @@
+@font-face{
+    font-family: 'PTAstraSans';
+    src: url('../fonts/PTAstraSans-Regular.eot');   
+    src: url('../fonts/PTAstraSans-Regular.eot?iefix') format('eot'),    
+    url('../fonts/PTAstraSans-Regular.woff') format('woff'),
+    url('../fonts/PTAstraSans-Regular.ttf') format('truetype'),
+    url('../fonts/PTAstraSans-Regular.svg#PTAstraSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'PTAstraSans';
+    src: url('../fonts/PTAstraSans-Italic.eot');   
+    src: url('../fonts/PTAstraSans-Italic.eot?iefix') format('eot'),    
+    url('../fonts/PTAstraSans-Italic.woff') format('woff'),
+    url('../fonts/PTAstraSans-Italic.ttf') format('truetype'),
+    url('../fonts/PTAstraSans-Italic.svg#PTAstraSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face{
+    font-family: 'PTAstraSans';
+    src: url('../fonts/PTAstraSans-Bold.eot');   
+    src: url('../fonts/PTAstraSans-Bold.eot?iefix') format('eot'),    
+    url('../fonts/PTAstraSans-Bold.woff') format('woff'),
+    url('../fonts/PTAstraSans-Bold.ttf') format('truetype'),
+    url('../fonts/PTAstraSans-Bold.svg#PTAstraSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'PTAstraSans';
+    src: url('../fonts/PTAstraSans-BoldItalic.eot');   
+    src: url('../fonts/PTAstraSans-BoldItalic.eot?iefix') format('eot'),    
+    url('../fonts/PTAstraSans-BoldItalic.woff') format('woff'),
+    url('../fonts/PTAstraSans-BoldItalic.ttf') format('truetype'),
+    url('../fonts/PTAstraSans-BoldItalic.svg#PTAstraSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
