@@ -79,8 +79,7 @@
 	@include radius($button-radius);
 }
 
-@mixin font($font-s, $font-h, $font-c) {
+@mixin font($font-s, $font-c) {
     font-size: $font-s;
-    line-height: $font-h;
     color:$font-c;
 }

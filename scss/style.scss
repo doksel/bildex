@@ -1,16 +1,113 @@
 // sass --watch scss/style.scss:css/style.css
+
 @import "base/_reset";
 @import "base/_fonts";
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,700');
-// font-family: 'Exo 2', sans-serif;
-@import '_button';
-@import '_mixin_border';
+@import "utils/_mixins.scss";
+@import "utils/_variables.scss";
+
 // прозрачный шрифт с обводкой
 // h1{
 //     font-size:100px;
 //   -webkit-text-stroke: 1px white;
 //   -webkit-text-fill-color: transparent;
 //   }
+body{
+    font-family: $base-font-family;
+}
+hr{
+    height: 1px;
+    background: rgba(200, 200, 200, 0.5);
+}
+.opasity{
+    opacity: 0.5;
+}
+header{
+    color: white;
+    a:hover{
+        @extend .opasity;
+    }
+    .preheader{
+        height: 50px;
+        .icons{
+            a{
+                padding: 7px;
+            }        
+        }
+        .contacts{
+            .lang-flat{
+                width: 15px; height: 10px;
+            }
+            a{
+                padding: 3px;
+            }
+        }
+    }
+    nav{
+        .text-brand{
+            @include font(9px, $text-color-blue);
+        }
+        .text-brand :last-child{
+            color: rgb(244, 125, 66);
+        }
+        ul{
+            @include font(12px, white);
+            list-style: none;
+            a{
+                height: 100%;
+                border-bottom: solid transparent 2px ;
+                color: white !important;
+                margin-left: 40px;
+            }
+            a:hover{
+                border-bottom: solid white 2px;
+            }
+            .dropdown-menu{
+                background: black;
+                a:hover{
+                    border-bottom: none;
+                    color: white !important;
+                    background: gray;
+                }
+                .dropdown-item{
+                    @include font(12px, white);  
+                    line-height: $line-height-h1;
+                }
+            }
+        }
+    }
+}
+.hero{
+    height: 100vh;
+    min-height: 756px;
+    background:      linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),url(../images/hero/bg-hero.jpg) no-repeat center;
+    background-size: cover;
+    section{
+        .title{
+            @include font($font-size-h1, white);
+            font-weight: bold;
+            line-height: $line-height-h1;
+            padding: 30px;
+        }
+        .content{
+            @include font($font-size-h4, white);
+            text-align: center;
+            padding: 70px;
+            border-bottom: solid rgba(200, 200, 200, 0.5) 1px;
+            border-top: solid rgba(200, 200, 200, 0.5) 1px;
+        }
+        .content::after{
+            content: '';
+            height: 50px;width: 50px;
+            border-left: solid rgba(200, 200, 200, 0.5) 1px;
+            border-right: solid rgba(200, 200, 200, 0.5) 1px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
 }
 
