@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Bildex</title>
 </head>
@@ -12,12 +13,12 @@
     <div class="hero container-fluid">
         <header class="container py-3">
             <div class="preheader m-auto row justify-content-between">
-                <div class="icons col row align-items-center">
+                <div class="preheader_icons col row align-items-center">
                     <a class="align-items-center" href="#"><img src="images/header/icon-fb.png" alt="icon"></a>
                     <a href="#"><img src="images/header/icon-tw.png" alt="icon"></a>
                     <a href="#"><img src="images/header/icon-inst.png" alt="icon"></a>  
                 </div>
-                <div class="contacts col-lg-5 col-md-6 row justify-content-between align-items-center">
+                <div class="preheader_contacts col-lg-5 col-md-6 row justify-content-between align-items-center">
                     <div><p>(067) 462-06-07</p></div>
                     <div class="opasity"><p>Пн - пт: 9:00 - 18:00</p></div>
                     <div>
@@ -27,7 +28,7 @@
                     </div>
                 </div>
             </div><hr>
-            <nav class="navbar navbar-expand-lg py-2 px-0 navbar-dark ">
+            <nav class="sticky-top navbar navbar-expand-lg py-2 px-0 navbar-dark ">
                 <div class="navbar-header">
                     <a href="#" class="navbar-brand d-flex">
                         <img src="images/header/logo-brand.png" alt="logo">
@@ -39,7 +40,8 @@
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="fa fa-bars"></span>
+                    <span class="fa fa-times"></span>
                 </button>
                 <div class="myNavbar navbar-collapse collapse justify-content-end">
                     <ul class="navbar-nav">
@@ -69,21 +71,91 @@
                 </div>
             </nav>
         </header> 
-        <section class="container col-lg-6 m-auto py-5">
+        <main class="container col-lg-6 m-auto py-5">
             <div class="title">
                 <h1>СТРОИМ</h1>
                 <h1>СОВЕРШЕНСТВО</h1>
             </div>
             <div class="content text-align-center">
+                <div class="borderWrap"></div>
                 <h5>Мы воплотили проект, который занял</h5>
                 <h5>1 место на всеукраинском конкурсе</h5>
                 <h5>интерьеров в 2014 году</h5>
+                
             </div>
-        </section>
+            <button class="row align-items-center"><div>Узнать больше о проекте </div><img src="images/hero/more.png" alt=""></button>
+        </main>
+        <div class="hero_scroll"><img src="images/hero/arrow-scroll.png" alt=""></div>
+    </div>
+
+    <div class="service container py-3">
+        <h1 class="mt-5">ЧТО МЫ ДЕЛАЕМ</h1>
+        <div class="row my-5">
+            <div class="block col-lg-3 col-md-6 col-sm-12">
+                <div class="block_img">
+                    <img src="images/service/icon1-service.png" alt="">
+                </div>
+                <div class="block_text">
+                    <div class="title row align-items-center">
+                        <div class="decor mr-1"></div>
+                        <h4>ГЕНЕРАЛЬНЫЙ ПОДРЯД</h4>
+                    </div>
+                    <p>Мы берем на себя полную ответственность за качество выполняемых робот</p>
+                </div>
+                <div class="more row align-items-center">
+                    <span></span>
+                    <img src="images/service/arrow-more.png" alt="">
+                </div>
+            </div>
+            <div class="block col-lg-3 col-md-6 col-sm-12">
+                <div class="img">
+                    <img src="images/service/icon2-service.png" alt="">
+                </div>
+                <div class="title row align-items-center">
+                    <div class="decor mr-1"></div>
+                    <h4>ОБЩЕ-</h4>
+                    <h4>СТРОИТЕЛЬНЫЕ РАБОТЫ</h4>
+                </div>
+                <p>Производим комплексные, капитальные, косметические или евро-ремонты</p>
+                <div class="more row align-items-center">
+                    <span></span>
+                    <img src="images/service/arrow-more.png" alt="">
+                </div>
+            </div>
+            <div class="block col-lg-3 col-md-6 col-sm-12">
+                <div class="img">
+                    <img src="images/service/icon3-service.png" alt="">
+                </div>
+                <div class="title row align-items-center">
+                    <div class="decor mr-1"></div>
+                    <h4>ОТДЕЛОЧНЫЕ РАБОТЫ</h4>
+                </div>
+                <p>Поможем спроектировать, провести, уложить и смонтировать</p>
+                <div class="more row align-items-center">
+                    <span></span>
+                    <img src="images/service/arrow-more.png" alt="">
+                </div>
+            </div>
+            <div class="block col-lg-3 col-md-6 col-sm-12">
+                <div class="img">
+                    <img src="images/service/icon4-service.png" alt="">
+                </div>
+                <div class="title row align-items-center">
+                    <div class="decor mr-1"></div>
+                    <h4>ИНЖИНИРИНГ</h4>
+                </div>
+                <p>Поможем спроектировать, провести, уложить и смонтировать</p>
+                <div class="more row align-items-center">
+                    <span></span>
+                    <img src="images/service/arrow-more.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>

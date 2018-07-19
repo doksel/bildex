@@ -14,10 +14,13 @@
 //   }
 body{
     font-family: $base-font-family;
+    background: $base-bg;
+    @include font($base-font-size, $text-color);
+    line-height: $base-line-height;
 }
 hr{
     height: 1px;
-    background: rgba(200, 200, 200, 0.5);
+    background: $border-color;
 }
 .opasity{
     opacity: 0.5;
@@ -29,12 +32,12 @@ header{
     }
     .preheader{
         height: 50px;
-        .icons{
+        .preheader_icons{
             a{
                 padding: 7px;
             }        
         }
-        .contacts{
+        .preheader_contacts{
             .lang-flat{
                 width: 15px; height: 10px;
             }
@@ -61,6 +64,7 @@ header{
             }
             a:hover{
                 border-bottom: solid white 2px;
+                opacity: 1;
             }
             .dropdown-menu{
                 background: black;
@@ -72,12 +76,17 @@ header{
                 .dropdown-item{
                     @include font(12px, white);  
                     line-height: $line-height-h1;
+                    margin-left: 0;
                 }
             }
         }
     }
+    .fa-times{
+        display: none;
+    }
 }
 .hero{
+    position: relative;
     height: 100vh;
     min-height: 756px;
     background:      linear-gradient(
@@ -85,7 +94,7 @@ header{
         rgba(0, 0, 0, 0.3)
       ),url(../images/hero/bg-hero.jpg) no-repeat center;
     background-size: cover;
-    section{
+    main{
         .title{
             @include font($font-size-h1, white);
             font-weight: bold;
@@ -94,20 +103,73 @@ header{
         }
         .content{
             @include font($font-size-h4, white);
+            position: relative;
             text-align: center;
             padding: 70px;
-            border-bottom: solid rgba(200, 200, 200, 0.5) 1px;
-            border-top: solid rgba(200, 200, 200, 0.5) 1px;
+            border-bottom: solid $border-color 1px;
+            border-top: solid $border-color 1px;
+            .borderWrap{
+                position: absolute;
+                left: 20px; top: -20px;
+                height: 120%;width: 90%;
+                border-left: solid $border-color 1px;
+                border-right: solid $border-color 1px;
+            }
         }
-        .content::after{
-            content: '';
-            height: 50px;width: 50px;
-            border-left: solid rgba(200, 200, 200, 0.5) 1px;
-            border-right: solid rgba(200, 200, 200, 0.5) 1px;
+        button{
+            padding: 10px 15px;
+            background: none;
+            border: solid $border-color 1px;
+            margin: 50px;
+            float: right;
+            div{
+                @include font(12px, white);
+                margin-right: 5px;
+                display: none;
+            }
+            @include transition($default-transition);
         }
+        button:hover{
+            border: solid white 1px;
+            margin-right: -50px;
+            div{
+                display: block;
+            }
+        }
+    }
+    .hero_scroll{
+        position: absolute;
+        bottom: 10px; left: 50%;
     }
 }
 
+.service{
+    h1{
+        @include font($font-size-h1, $text-color);
+        line-height: $line-height-h1;
+        font-weight: bold;
+    }
+    h4{
+        @include font($font-size-h4, $text-color);
+        line-height: $line-height-h4;
+        font-weight: bold;
+    }
+    .block{
+        border: solid black 1px;
+        .title{
+            .decor{
+                height: 3px;width: 30px;
+                background: blue;
+            }
+        }
+        .block_img{
+            height: 35%;
+        }
+        p, .more{
+            margin: 30px;
+        }
+    }
+}
 @media (max-width: 768px) {
 }
 

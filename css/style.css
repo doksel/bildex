@@ -73,11 +73,11 @@ form {
 
 a {
   color: #100da9;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   text-decoration: none;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -141,7 +141,11 @@ button {
 /* reset */
 /* main variables */
 body {
-  font-family: "PTAstraSans", sans-serif; }
+  font-family: "PTAstraSans", sans-serif;
+  background: white;
+  font-size: 14px;
+  color: black;
+  line-height: 18px; }
 
 hr {
   height: 1px;
@@ -154,12 +158,12 @@ header {
   color: white; }
   header .preheader {
     height: 50px; }
-    header .preheader .icons a {
+    header .preheader .preheader_icons a {
       padding: 7px; }
-    header .preheader .contacts .lang-flat {
+    header .preheader .preheader_contacts .lang-flat {
       width: 15px;
       height: 10px; }
-    header .preheader .contacts a {
+    header .preheader .preheader_contacts a {
       padding: 3px; }
   header nav .text-brand {
     font-size: 9px;
@@ -176,7 +180,8 @@ header {
       color: white !important;
       margin-left: 40px; }
     header nav ul a:hover {
-      border-bottom: solid white 2px; }
+      border-bottom: solid white 2px;
+      opacity: 1; }
     header nav ul .dropdown-menu {
       background: black; }
       header nav ul .dropdown-menu a:hover {
@@ -186,31 +191,84 @@ header {
       header nav ul .dropdown-menu .dropdown-item {
         font-size: 12px;
         color: white;
-        line-height: 36px; }
+        line-height: 36px;
+        margin-left: 0; }
+  header .fa-times {
+    display: none; }
 
 .hero {
+  position: relative;
   height: 100vh;
   min-height: 756px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero/bg-hero.jpg) no-repeat center;
   background-size: cover; }
-  .hero section .title {
+  .hero main .title {
     font-size: 30px;
     color: white;
     font-weight: bold;
     line-height: 36px;
     padding: 30px; }
-  .hero section .content {
+  .hero main .content {
     font-size: 18px;
     color: white;
+    position: relative;
     text-align: center;
     padding: 70px;
     border-bottom: solid rgba(200, 200, 200, 0.5) 1px;
     border-top: solid rgba(200, 200, 200, 0.5) 1px; }
-  .hero section .content::after {
-    content: '';
-    height: 50px;
-    width: 50px;
-    border-left: solid rgba(200, 200, 200, 0.5) 1px;
-    border-right: solid rgba(200, 200, 200, 0.5) 1px; }
+    .hero main .content .borderWrap {
+      position: absolute;
+      left: 20px;
+      top: -20px;
+      height: 120%;
+      width: 90%;
+      border-left: solid rgba(200, 200, 200, 0.5) 1px;
+      border-right: solid rgba(200, 200, 200, 0.5) 1px; }
+  .hero main button {
+    padding: 10px 15px;
+    background: none;
+    border: solid rgba(200, 200, 200, 0.5) 1px;
+    margin: 50px;
+    float: right;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
+    .hero main button div {
+      font-size: 12px;
+      color: white;
+      margin-right: 5px;
+      display: none; }
+  .hero main button:hover {
+    border: solid white 1px;
+    margin-right: -50px; }
+    .hero main button:hover div {
+      display: block; }
+  .hero .hero_scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 50%; }
+
+.service h1 {
+  font-size: 30px;
+  color: black;
+  line-height: 36px;
+  font-weight: bold; }
+.service h4 {
+  font-size: 18px;
+  color: black;
+  line-height: 22px;
+  font-weight: bold; }
+.service .block {
+  border: solid black 1px; }
+  .service .block .title .decor {
+    height: 3px;
+    width: 30px;
+    background: blue; }
+  .service .block .block_img {
+    height: 35%; }
+  .service .block p, .service .block .more {
+    margin: 30px; }
 
 /*# sourceMappingURL=style.css.map */
